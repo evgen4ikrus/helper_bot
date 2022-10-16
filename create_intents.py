@@ -1,8 +1,8 @@
+import json
 import logging
+
 from environs import Env
 from google.cloud import dialogflow
-import json
-
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
