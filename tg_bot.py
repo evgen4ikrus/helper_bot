@@ -2,7 +2,6 @@ import logging
 from functools import partial
 
 from environs import Env
-from google.cloud import dialogflow
 from telegram import Update
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, Updater)
