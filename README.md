@@ -10,18 +10,27 @@ pip install -r requirements.txt
 ```
 * Создайте [Google-проект](https://cloud.google.com/dialogflow/es/docs/quick/setup) и [агента в DialogFlow](https://cloud.google.com/dialogflow/es/docs/quick/build-agent).
 * Запишите переменные окружения в файле .env в формате КЛЮЧ=ЗНАЧЕНИЕ:
+
 `GOOGLE_APPLICATION_CREDENTIALS` - путь до файла с JSON-ключом. [Получить ключ](https://cloud.google.com/docs/authentication/client-libraries).
 
 `PROJECT_ID` - ID Google проекта.
 
-TELEGRAM_API_TOKEN - Токен Телеграмма. Получить можно у [BotFather](https://telegram.me/BotFather).
+`TELEGRAM_TOKEN` - Токен Телеграмма. Получить можно у [BotFather](https://telegram.me/BotFather).
+`VK_GROUP_TOKEN` - Токер группы VK. Получить в настройках группы, в меню “Работа с API”.
 ## Скрипты:
 ### tg_bot.py
-Запускает телеграмм бота
+Запускает телеграмм бота.
 
 Запуск:
 ```
 python tg_bot.py
+```
+### vk_bot.py
+Запускает бота в группе VK.
+
+Запуск:
+```
+python vk_bot.py
 ```
 ### create_intents.py
 Создает Intent на [DialogFlow](https://dialogflow.cloud.google.com/) из данных json-файла.
