@@ -16,6 +16,7 @@ pip install -r requirements.txt
 `PROJECT_ID` - ID Google проекта.
 
 `TELEGRAM_TOKEN` - Токен Телеграмма. Получить можно у [BotFather](https://telegram.me/BotFather).
+
 `VK_GROUP_TOKEN` - Токер группы VK. Получить в настройках группы, в меню “Работа с API”.
 ## Скрипты:
 ### tg_bot.py
