@@ -1,5 +1,17 @@
 # helper_bot
+Бот помошник для распознавания речи для VK и Telegram.
+## Примеры работы ботов:
+[Работающий бот](https://t.me/TestDevmanBot) в Telegram.
 
+Пример результата для Telegram:
+
+![tg](https://dvmn.org/media/filer_public/7a/08/7a087983-bddd-40a3-b927-a43fb0d2f906/demo_tg_bot.gif)
+
+[Работающий бот](https://vk.com/im?sel=-216519868) в группе VK.
+
+Пример результата для VK:
+
+![vk](https://dvmn.org/media/filer_public/1e/f6/1ef61183-56ad-4094-b3d0-21800bdb8b09/demo_vk_bot.gif)
 ## Установка
 Для работы скрипта вам понадобится Python третьей версии.
 
