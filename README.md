@@ -18,6 +18,8 @@ pip install -r requirements.txt
 `TELEGRAM_TOKEN` - Токен Телеграмма. Получить можно у [BotFather](https://telegram.me/BotFather).
 
 `VK_GROUP_TOKEN` - Токер группы VK. Получить в настройках группы, в меню “Работа с API”.
+
+`TELEGRAM_CHAT_ID` - ID чата в телеграм, в который будут приходить логи.
 ## Скрипты:
 ### tg_bot.py
 Запускает телеграмм бота.
