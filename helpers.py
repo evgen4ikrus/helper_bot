@@ -1,5 +1,6 @@
-from google.cloud import dialogflow
 import logging
+
+from google.cloud import dialogflow
 
 
 def detect_intent_texts(project_id, session_id, text, language_code, fallback_accounting=True):

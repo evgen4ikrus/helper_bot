@@ -1,16 +1,14 @@
 import logging
 from functools import partial
-import requests
 from time import sleep
 
-from environs import Env
+import requests
 import telegram
-
+from environs import Env
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, Updater)
 
-from helpers import detect_intent_texts, TelegramLogsHandler
-
+from helpers import TelegramLogsHandler, detect_intent_texts
 
 logger = logging.getLogger('tg_bot')
 

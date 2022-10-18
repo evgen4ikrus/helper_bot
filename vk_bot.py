@@ -2,14 +2,13 @@ import logging
 import random
 from time import sleep
 
-import vk_api as vk
+import requests
 import telegram
+import vk_api as vk
 from environs import Env
 from vk_api.longpoll import VkEventType, VkLongPoll
-import requests
 
-from helpers import detect_intent_texts, TelegramLogsHandler
-
+from helpers import TelegramLogsHandler, detect_intent_texts
 
 logger = logging.getLogger('vk_bot')
 
