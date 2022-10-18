@@ -1,8 +1,6 @@
 import logging
 import random
-from time import sleep
 
-import requests
 import telegram
 import vk_api as vk
 from environs import Env
@@ -48,10 +46,6 @@ def main() -> None:
             for event in longpoll.listen():
                 if event.type == VkEventType.MESSAGE_NEW and event.to_me:
                     reply_to_message(event, vk_api, project_id)
-
-        except requests.exceptions.ConnectionError:
-            logger.warning('Потеряно интернет соединение')
-            sleep(10)
 
         except Exception:
             logger.exception('Произошла ошибка:')

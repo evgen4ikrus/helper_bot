@@ -1,8 +1,6 @@
 import logging
 from functools import partial
-from time import sleep
 
-import requests
 import telegram
 from environs import Env
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
@@ -50,10 +48,6 @@ def main() -> None:
             updater.start_polling()
             logger.info('Telegram bot запущен')
             updater.idle()
-
-        except requests.exceptions.ConnectionError:
-            logger.warning('Потеряно интернет соединение')
-            sleep(10)
 
         except Exception:
             logger.exception('Произошла ошибка:')
