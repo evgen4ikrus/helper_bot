@@ -14,8 +14,7 @@ logger = logging.getLogger('tg_bot')
 
 
 def start(update: telegram.Update, context: CallbackContext) -> None:
-    user = update.effective_user
-    update.message.reply_markdown_v2(f'Здравствуйте, {user.mention_markdown_v2()}')
+    update.message.reply_markdown_v2('Здравствуйте, чем можем помочь?')
 
 
 def reply_to_message(update: telegram.Update, context: CallbackContext, project_id) -> None:
