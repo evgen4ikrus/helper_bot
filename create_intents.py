@@ -4,9 +4,7 @@ import logging
 from environs import Env
 from google.cloud import dialogflow
 
-logging.basicConfig(
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
-)
+
 logger = logging.getLogger(__name__)
 
 
@@ -34,6 +32,7 @@ def create_intent(project_id, display_name, training_phrases_parts, message_text
 
 
 def main() -> None:
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
     env = Env()
     env.read_env()
     project_id = env('PROJECT_ID')
