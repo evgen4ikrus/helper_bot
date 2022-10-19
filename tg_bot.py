@@ -6,7 +6,8 @@ from environs import Env
 from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, Updater)
 
-from helpers import TelegramLogsHandler, detect_intent_texts
+from dialogflow_helpers import detect_intent_texts
+from log_helpers import TelegramLogsHandler
 
 logger = logging.getLogger('tg_bot')
 
