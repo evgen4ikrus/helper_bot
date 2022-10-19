@@ -9,6 +9,6 @@ def detect_intent_texts(project_id, session_id, text, language_code, fallback_ac
     response = session_client.detect_intent(
         request={"session": session, "query_input": query_input}
     )
-    if response.query_result.intent.is_fallback and fallback_accounting is False:
+    if response.query_result.intent.is_fallback and not fallback_accounting:
         return None
     return response.query_result.fulfillment_text
